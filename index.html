@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -13,22 +14,28 @@
         <div class="logo">
             <img id="img" src="" alt="png">
         </div>
-        <nav id="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">My skills</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
+
+    <nav id="menu" class="sidebar">
+        <ul>
+            <li><a href="#home"><span class="material-icons">home</span> Home</a></li>
+            <li><a href="#sobre"><span class="material-icons">laptop</span> My skills</a></li>
+            <li><a href="#contato"><span class="material-icons">email</span> Contato</a></li>
+        </ul>
+    </nav>
+    
+
+    </nav>
+
     <div class="banner-text">
         <h1>Olá, eu sou o <span id="nome">Pablo</span></h1>
         <p>Desenvolvedor Front-End com expertise em HTML, CSS, JavaScript e React.</p>
-       <a href="https://github.com/pabloaraujo2003?tab=repositories" target=”_blank”> <button onclick="projetos()" class="btn-projetos" type="submit">Meus projetos</button></a>
+        <a href="https://github.com/pabloaraujo2003?tab=repositories" target="_blank">
+            <button onclick="projetos()" class="btn-projetos" type="submit">Meus projetos</button>
+        </a>
     </div>
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

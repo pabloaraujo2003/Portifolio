@@ -24,26 +24,47 @@ body {
     border-radius: 90%;
 }
 
-#menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.menu-toggle {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #008584;
 }
 
-#menu ul li a {
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #006666;
+    padding-top: 50px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
-    color: #008584;
+    color: #cccccc;
     font-size: 20px;
-    padding: 10px 15px;
+    display: block;
     transition: 0.3s;
 }
 
-#menu ul li a:hover {
-    background-color: #006666;
-    color: #cccccc;
-    border-bottom: 3px solid #cccccc;
-    border-radius: 3px;
+.sidebar.active {
+    left: 0;
 }
 
 .banner-text {
@@ -52,17 +73,15 @@ body {
     font-size: 40px;
     margin-top: 50px;
     font-family: "Bebas Neue", sans-serif;
-
 }
 
 .banner-text p {
-    font-style: normal;
     font-size: 20px;
     max-width: 900px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.btn-projetos{
+.btn-projetos {
     background-color: #cccccc;
     color: #008584;
     padding: 10px 15px;
@@ -79,4 +98,12 @@ body {
 .btn-projetos:hover {
     background-color: #006666;
     color: #cccccc;
+}
+
+.material-icons {
+    color: #cccccc;
+    margin-right: 5px;
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
 }
